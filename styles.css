@@ -1,0 +1,113 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.calculator {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    color: #007bff;
+    font-size: 16px;
+    margin-bottom: 20px;
+    animation: fadeIn 1s;
+}
+
+h1 {
+    color: #007bff;
+    font-size: 24px;
+    margin-bottom: 20px;
+    animation: fadeIn 1s;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    animation: fadeIn 1s 0.5s;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+    font-size: 18px;
+}
+
+input[type="number"],
+input[type="range"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #007bff;
+    border-radius: 0;
+    font-size: 16px;
+    transition: border-bottom 0.3s;
+    color: #007bff;
+}
+
+input[type="number"]:focus,
+input[type="range"]:focus {
+    outline: none;
+    border-bottom: 2px solid #0056b3;
+}
+
+input[disabled] {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    color: #333;
+    cursor: not-allowed;
+    animation: fadeIn 1s 1s;
+}
+
+#billTotal {
+    background-color: #f0f0f0;
+}
+
+#tip {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#tipAmount, #totalWithTip {
+    background-color: #f0f0f0;
+    font-size: 18px;
+    animation: fadeIn 1s 1s;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    animation: fadeIn 1s 1.5s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

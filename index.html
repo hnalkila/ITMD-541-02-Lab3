@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <h1 class="title">ITMD/541/02 - Lab3 - Haindavi Nalkila</h1>
+        <h1>Tip Calculator</h1>
+        <form id="tipForm">
+            <label for="billTotal">Bill Total:</label>
+            <input type="number" id="billTotal" step="0.01" required>
+            
+            <label for="tip">Tip Percentage:</label>
+            <input type="range" id="tip" min="0" max="100" step="1">
+            
+            <label for="tipAmount">Tip Amount:</label>
+            <input type="text" id="tipAmount" disabled>
+            
+            <label for="totalWithTip">Total Bill with Tip:</label>
+            <input type="text" id="totalWithTip" disabled>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
